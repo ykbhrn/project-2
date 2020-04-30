@@ -1,8 +1,8 @@
 import React from 'react'
-import { getAllNews } from '../../lib/api'
-import NavbarTwo from '../common/Navbar2'
+import { businessPage } from '../../../lib/api'
+import NavbarTwo from '../../common/Navbar2'
 
-class ShowNews extends React.Component {
+class Business extends React.Component {
 
   state={
     news: []
@@ -10,16 +10,16 @@ class ShowNews extends React.Component {
 
   async componentDidMount() {
     try {
-      const res = await getAllNews()
+      const res = await businessPage()
       this.setState({ news: res.data.articles })
     } catch (err) {
       console.log(err)
     }
   }
+  
 
   render() {
-
-   
+    console.log(this.state.news)
     return (
       <>
         <NavbarTwo />
@@ -59,4 +59,4 @@ class ShowNews extends React.Component {
     )
   }
 }
-export default ShowNews
+export default Business

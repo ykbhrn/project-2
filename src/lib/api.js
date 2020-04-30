@@ -1,29 +1,17 @@
 import axios from 'axios'
 
-const apiKey = '&apiKey=cc76af5239764bb5a43a427e3746fdb8'
+const apiKey = '&apiKey=6e145feb0c664217b76b233d8c8d7366'
 
 const newsUrl = 'https://newsapi.org/v2/top-headlines'
 
-export const getAllNews = () => {
-  return axios.get(`${newsUrl}?country=us${apiKey}`)
+export const getAllNews = (country) => {
+  return axios.get(`${newsUrl}?country=${country}${apiKey}`)
 }
 
+export const filterCategory = (country, category) => {
+  return axios.get(`${newsUrl}?country=${country}&category=${category}${apiKey}`)
+}
 export const businessPage = () => {
   return axios.get(`${newsUrl}?country=us&category=business${apiKey}`)
 }
-// export const businessPage = () => {
-//   return axios.get(`${newsUrl}?country=us&category=business${apiKey}`)
-// }
-// export const businessPage = () => {
-//   return axios.get(`${newsUrl}?country=us&category=business${apiKey}`)
-// }
-// export const businessPage = () => {
-//   return axios.get(`${newsUrl}?country=us&category=business${apiKey}`)
-// }
-// export const businessPage = () => {
-//   return axios.get(`${newsUrl}?country=us&category=business${apiKey}`)
-// }
-// export const businessPage = () => {
-//   return axios.get(`${newsUrl}?country=us&category=business${apiKey}`)
-// }
 

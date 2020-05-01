@@ -11,6 +11,7 @@ import Health from './components/items/categories/Health'
 import Science from './components/items/categories/Science'
 import Sports from './components/items/categories/Sports'
 import Technology from './components/items/categories/Technology'
+import ShowWeather from './components/items/weather/ShowWeather'
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/news/sports" component={Sports} />
         <Route path="/news/technology" component={Technology} />
         <Route path="/news" component={ShowNews} />
+        <Route path="/weather" component={ShowWeather} />
       </Switch>
       <Footer />
 

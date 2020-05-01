@@ -7,7 +7,7 @@ const SelectCountry = ( { handleChange } ) => {
     <select 
       onChange={handleChange}
     >
-      <option value="gb">United Kingdom</option>
+      <option className="options" value="gb">United Kingdom</option>
       <option value="us">United States of America</option>
       <hr />
       <option value="ar">Argentina</option>

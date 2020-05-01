@@ -3,28 +3,39 @@ import { getAllWeather } from '../../../lib/api'
 
 class ShowWeather extends React.Component {
   state = {
-    city: ''
+    city: null
   }
-  async componentDidMount() {
-    try {
-      const res = await getAllWeather(this.state.city)
-      this.setState({ news: res.data.articles })
-    } catch (err) {
-      console.log(err)
-    }
-  }
+  // async componentDidMount() {
+  //   try {
+  //     const res = await getAllWeather()
+  //     this.setState({ city: res.data })
+  //   } catch (err) {
+  //     console.log(err)
+  //   }
+  // }
   handleChange = async (event) => {
-    console.log(event.target.value)
-    try {
-      await this.setState({ country: event.target.value })
-      this.componentDidMount()
-    } catch (err) {
-      console.log(err)
-    }
+    event.preventDefault()
+    console.log(event.target.value
+    )
+    // try {
+    //   await this.setState({ country: event.target.value })
+    //   this.componentDidMount()
+    // } catch (err) {
+    //   console.log(err)
+    // }
   }
   render() {
+
+    console.log(this.state.city)
     return (
       <>
+        <form
+        >
+          <input
+            onChange={this.handleChange}
+          >
+          </input>
+        </form>
         <section className="section">
           <div className="container">
             <div className="columns is-multiline">
@@ -35,6 +46,7 @@ class ShowWeather extends React.Component {
                       {title}</h1> */}
                     <div className="image-tag">
                       {/* <img src={urlToImage} alt={title} /> */}
+                      hello
                     </div>
                     <p className="author-name">
                       {/* {author} - {publishedAt.split('T').join(' ').split('Z')} */}

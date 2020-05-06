@@ -1,23 +1,14 @@
 import axios from 'axios'
-
-const apiKey = '&apiKey=6782c412ba294495afbcc7a6791b1125'
-
+const apiKey = process.env.REACT_APP_MY_SECRET_KEY_NEWS
 const newsUrl = 'https://newsapi.org/v2/top-headlines'
-
-const weatherUrl = 'http://api.weatherstack.com/'
-
-const weatherApiKey = '851110325e8ed3acbc16f9bc843ac101'
-
-
+const weatherKey = process.env.REACT_APP_MY_SECRET_KEY_WEATHER
+const weatherURL = 'http://api.weatherstack.com/'
 export const getAllNews = (country) => {
-  return axios.get(`${newsUrl}?country=${country}${apiKey}`)
+  return axios.get(`${newsUrl}?country=${country}&apiKey=${apiKey}`)
 }
-
 export const filterCategory = (country, category) => {
-  return axios.get(`${newsUrl}?country=${country}&category=${category}${apiKey}`)
+  return axios.get(`${newsUrl}?country=${country}&category=${category}&apiKey=${apiKey}`)
 }
-
-export const getAllWeather = (city) => {
-  return axios.get(`${weatherUrl}current?access_key=${weatherApiKey}&query=${city}`)
+export const getAllWeather = (searchTerm) => {
+  return axios.get(`${weatherURL}current?access_key=${weatherKey}&query=${searchTerm}`)
 }
-

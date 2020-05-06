@@ -1,10 +1,8 @@
 @import '~bulma/bulma.sass';
 
 .hero {
-  background: rgb(0, 48, 92);
+  background: #00305c;
 }
-
-
 
 @keyframes show {
   0% { opacity: 0;}
@@ -78,15 +76,18 @@
   animation-iteration-count: infinite;
 }
 
-
-
-
+.loading-bar{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
 
 
 .navbar {
   margin-bottom: 5px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .navbar-item:hover {
     background: white;
     &:active {
@@ -100,13 +101,12 @@
 }
 
   select {
-    font-size: 17px;
+    font-size: 15px;
     outline: none;
     width: 200px;
-    height: 40px;
+    height: 30px;
     background: rgb(0, 48, 92);
     color: white;
-    margin-left: 20px;
   }
 
 .card {
@@ -193,6 +193,43 @@ footer {
   border-bottom: 3px solid black;
 }
 
+.filter-country{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  left:20px;
+  z-index: 1000;
+}
+
+.search-form input{
+  width: 500px;
+  height: 40px;
+  font-size: 30px;
+  color: rgb(18, 120, 170);
+  outline-color: rgb(18, 120, 170);
+  opacity: 0.7;
+  background-image: url('/public/search.png');  
+}
+
+.search-form-container, .search-form-container-two{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-form-container{
+  height: 100vh;
+}
+.weather-board{
+  display: flex;
+  justify-content: center;
+}
+.weather-title{
+  color: white;
+  text-align: center;
+}
+
 @media only screen and (max-width: 610px){
   .gps_ring{
     left: 40%;
@@ -201,5 +238,47 @@ footer {
   .gps_ring-two{
     left: 40%;
     top: 60%;
+  }
+  .navbar-two{
+    margin-bottom: 100px;
+  }
+  .filter-country{
+    top: 39%;
+    left: 10%;
+  }
+}
+.weather-image{
+  display: flex;
+  justify-content: center;
+  img{
+    height: 120px;
+    width: 120px;
+    border: 1px solid white;
+  }
+}
+.weather-content{
+  font-weight: 700;
+}
+
+.main-content{
+  text-align: center;
+}
+
+@media only screen and (max-width: 1110px){
+  .filter-country{
+    top: 23%;
+    left: 40%;
+  }
+  .filter-text{
+    display: none;
+  }
+  .navbar-two{
+    margin-bottom: 40px;
+  }
+  select{
+    font-size: 13px;
+    width: 180px;
+    height: 25px;
+    margin: 0;
   }
 }

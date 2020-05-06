@@ -3,9 +3,12 @@ import { filterCategory } from '../../../lib/api'
 import NavbarTwo from '../../common/Navbar2'
 import SelectCountry from '../../common/SelectCountry'
 import ShowArticle from '../ShowArticle'
+import Spinner from '../../common/Spinner'
+import Navbar from '../../common/Navbar'
+import Footer from '../../common/Footer'
 class General extends React.Component {
   state = {
-    news: [],
+    news: null,
     country: 'gb'
   }
   async componentDidMount() {
@@ -26,9 +29,11 @@ class General extends React.Component {
     }
   }
   render() {
+    if (!this.state.news) return <Spinner />
     const { news } = this.state
     return (
       <>
+        <Navbar />
         <NavbarTwo />
         <SelectCountry handleChange={this.handleChange} />
         <section className="section">
@@ -40,6 +45,7 @@ class General extends React.Component {
             </div>
           </div>
         </section >
+        <Footer />
       </>
     )
   }

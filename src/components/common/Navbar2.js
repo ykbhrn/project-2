@@ -8,7 +8,7 @@ class NavbarTwo extends React.Component {
   }
   render() {
     return (
-      <div className="navbar">
+      <div className="navbar navbar-two">
         <Link to="/news/business" className="navbar-item business">
           <span>Business</span>
         </Link>

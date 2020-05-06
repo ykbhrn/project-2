@@ -2,7 +2,7 @@ import axios from 'axios'
 const apiKey = process.env.REACT_APP_MY_SECRET_KEY_NEWS
 const newsUrl = 'https://newsapi.org/v2/top-headlines'
 const weatherKey = process.env.REACT_APP_MY_SECRET_KEY_WEATHER
-const weatherURL = 'http://api.weatherstack.com/'
+const weatherURL = 'https://api.weatherstack.com/'
 export const getAllNews = (country) => {
   return axios.get(`${newsUrl}?country=${country}&apiKey=${apiKey}`)
 }

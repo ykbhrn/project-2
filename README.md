@@ -1,9 +1,14 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+# ** SEI Project two: Reactathon**
 
-`yarn start` to run the development server
+## https://news-worldwide-ykbhrn.netlify.app/
 
-`yarn build` to create a build directory
+## **Overview.**
 
+Project 2 was my first experience of pair coding. My partner and I had to create a front end app using **React** and **Axios** to consume an **API** in just over 1 day. We made the decision to build a News and Weather app with 2 seperate APIs both had rich resources. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Once built our app was deployed using **Netlify**
 
+![Homepage screenshot](images/newspage.png)
+![News screenshot](images/home.png)
+
+-------------------------

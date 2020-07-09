@@ -95,3 +95,14 @@ The biggest win from the project was working in pairs with my partner Ed. Our co
 As we didn't have a lot of experiences with external APIs, our biggest challenge was finding the right API, learn how to use it, and successfully implement it in the project.
  
 ------------------------
+
+## Bugs 
+Our News API provider, have blocked request coming from Netlify, so the app is working in localhost, but unfortunately right now deployed version doesn't work properly. Weather API works alright, only problems are with the news.
+
+------------------------
+
+## Key learnings 
+Before the project, I didn't have a lot of experiences with React, but I learned a lot, and now I have a much better understanding of the technology.
+I also learned how to use external APIs documentation, where to find APIs, and how to implement it. 
+
+

@@ -43,6 +43,10 @@ Use at least one public API into a React application to create a fun or useful p
 -------------------------
  
 ## **Approach.**
+
+### Timeline 
+* Day 1 - Choosing API and Planning project
+* Day 2 - Coding
  
 #### APIs:
  

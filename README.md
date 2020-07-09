@@ -6,7 +6,7 @@
  
 Project 2 was my first experience with pair coding. My partner and I had to create a front end app using **React** and **Axios** to consume an **API** in just over 1 day. We made the decision to build a News and Weather app with 2 separate APIs both had rich resources.
  
-Once built our app was deployed using **Netlify**
+Once built our app was deployed using **Netlify**.
  
 ![News screenshot](images/newspage.png)
  
@@ -58,7 +58,7 @@ For our app, we decided to use 2 separate **APIs** to give a more well-rounded e
  
 ##### News:
  
-The structure of the app was created using **React**. We used the *Browser Router, Switch, and Route* from the **React-router-dom** package to layout navigation paths for the app. I created the main Navbar and a sub-Navbar, available only under the news heading on the main navbar. We also decided to exclude navbar and footer from the home page meaning we had to import it, when necessary, rather than putting it in the App.js before the *switch and routes*
+The structure of the app was created using **React**. We used the *Browser Router, Switch, and Route* from the **React-router-dom** package to layout navigation paths for the app. I created the main Navbar and a sub-Navbar, available only under the news heading on the main navbar. We also decided to exclude navbar and footer from the home page meaning we had to import it, when necessary, rather than putting it in the App.js before the **switch and routes.**
  
 ![Screenshot of Paths](images/paths.png)
  
@@ -79,7 +79,7 @@ Unfortunately, the free version of the *API* only allowed us to display the curr
  
 #### Design
  
-We made the decision to make the style minimalistic across the app. We used **Bulma** for our initial layout. However, once we had all functionality working we deviated from *Bulma* and used **SCSS** to adapt our design. *Keyframes* were used to animate the home page.
+We made the decision to make the style minimalistic across the app. We used **Bulma** for our initial layout. However, once we had all functionality working we deviated from *Bulma* and used **SCSS** to adapt our design. **Keyframes** were used to animate the home page.
  
  
 -------------------------
